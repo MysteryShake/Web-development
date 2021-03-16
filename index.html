@@ -5,34 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
-            </ul>
-        </nav>
-        <ul class="nav">
-          <li class= "nav-item"><a class="nav-link" href="tel:+79163588121">8 916 358-81-21</a></li>
-          <li class= "nav-item"><a class="nav-link" href="mailto:ermak02.02@mail.ru">ermak02.02@mail.ru</a></li>
-        </ul> 
-    </header>
-    <main>
+    <div class="dark">
+     <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
+                </ul>
+            </nav>
+                <ul class="nav nav-info">
+                    <li class= "nav-item"><a class="nav-link" href="tel:+79163588121">8 916 358-81-21</a></li>
+                    <li class= "nav-item"><a class="nav-link" href="mailto:ermak02.02@mail.ru">ermak02.02@mail.ru</a></li>
+                </ul> 
+        </header>
         <img class="photo" src="img/photo.png" alt="Photo">
-        <div>
-            <p class="name">Игорь Ленгаров</p>
-            <h1 class="title-h1">web-разработчик</h1>
-        </div>
-    </main>
-    
+        <main>
+            <svg class="circle circle-main" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="126.5" cy="126.5" r="126.5"/>
+            </svg>
+            <svg class="triangle" width="66" height="72" viewBox="0 0 66 72" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 0L65.909 71.25H0.0910339L33 0Z"/>
+            </svg>
+                <div>
+                    <p class="name">Игорь Ленгаров</p>
+                    <h1 class="title-h1">web-разработчик</h1>
+                </div>
+                <div class="social">
+                    <div class="social-item">
+                        <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>    
+                    </div>
+                    <div class="social-item">
+                        <svg class="circle circle-nav" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="126.5" cy="126.5" r="126.5"/>
+                        </svg>
+                        <ul class="nav nav-info">
+                            <li class= "nav-item"><a class="nav-link" href="https://vk.com/mystery_shake" target="_blank">VK</a></li>
+                            <li class= "nav-item"><a class="nav-link" href="https://www.instagram.com/mystery_shake/" target="_blank">Instagram</a></li>
+                            <li class= "nav-item"><a class="nav-link" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=cc1f17feff08a747680039ed1f6a4b76667946" target="_blank">hh</a></li>
+                        </ul>
+                    </div>     
+                </div>
+                <div class="skill">
+                    <div class="skill-item">
+                        <h3 class="title-h3">FRONT-END</h3> 
+                        <p class="description">HTML+CSS+JS кодирование дизайнов любой сложности</p>  
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="title-h3">Back-end</h3> 
+                        <p class="description">Разработка сложной back-end логики для готового front-end</p>  
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="title-h3">WORDPRESS</h3> 
+                        <p class="description">Разработка сайтов - от блога до интернет магазина</p>  
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="title-h3">SEO продвижение</h3> 
+                        <p class="description">Качественное улучшение позиций сайта в поисковой выдаче</p>  
+                    </div>
+                </div>
+        </main>    
+    </div>
     <footer>
 
-    </footer>
+    </footer>    
+    </div>
 </body>
 </html>
