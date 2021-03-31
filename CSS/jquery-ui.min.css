@@ -686,7 +686,7 @@ button.ui-button::-moz-focus-inner {
 	top: 0;
 	left: 0;
 	display: none;
-}
+} 
 .ui-selectmenu-menu .ui-menu {
 	overflow: auto;
 	overflow-x: hidden;

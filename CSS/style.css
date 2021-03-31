@@ -15,21 +15,58 @@ body{
 .dark .triangle path{
     fill: #FFF;
 }
+.dark .nav-tabs-item.ui-state-active .nav-tabs-link{
+    color: #F3F2F0;
+    border-bottom: 2px solid #F3F2F0;
+}
+.dark .nav-tabs-link{
+    border-bottom: 2px solid transparent;
+    color: rgba(243, 242, 240, 0.5);
+}
+.dark .tech-item:hover .tech-image{
+    filter: grayscale(0);
+}
 .dark .social,
 .dark .steps-item,
 .dark .about-title, 
-.dark .about-ghost{
+.dark .about-ghost,
+.dark .work{
     border-bottom: 1px solid #F3F2F0;
 }
-.dark 
-.steps-item:first-child{
+.dark .steps-item:first-child,
+.dark .advantages,
+.dark .tarif-item,
+.dark .form-item,
+.dark .form-social,
+.dark footer{
     border-top: 1px solid #F3F2F0;
+}
+.dark .html, 
+.dark .css, 
+.dark .js, 
+.dark .jquery{
+    border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .tech-item:first-child,
+.dark .tech-item:nth-child(5){
+    border-left: 1px solid rgba(243, 242, 240, 0.3);  
+}
+.dark .tech-item{
+    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+    border-right: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark form input{
+    background-color: #38383a;
+}
+.dark form input:focus{
+    color: #F3F2F0;
 }   
 .light{
     background-color:#F3F2F0;
     color:#232326;
 }
-.light .nav-link{
+.light .nav-link,
+.light .ui-selectmenu-menu .ui-menu-item:hover{
     color: #232326;  
 }
 .light .circle circle{
@@ -38,11 +75,52 @@ body{
 .light .triangle path{
     fill: #D40000;
 }
+.light .tech-item:hover .tech-image{
+    filter: grayscale(0);
+    opacity: 0.8;
+}
+.light .nav-tabs-item.ui-state-active .nav-tabs-link{
+    color: #010101;
+    border-bottom: 2px solid #010101;
+}
+.light .nav-tabs-link{
+    border-bottom: 2px solid transparent;
+    color: rgba(1, 1, 1, 0.5);
+}
 .light .social,
 .light .steps-item,
 .light .about-title, 
-.light .about-ghost{
+.light .about-ghost,
+.light .work{
     border-bottom: 1px solid #010101;
+}
+.light .steps-item:first-child,
+.light .advantages,
+.light .tarif-item,
+.light .form-item,
+.light .form-social,
+.light footer{
+    border-top: 1px solid #010101;
+}
+.light .html, 
+.light .css, 
+.light .js, 
+.light .jquery{
+    border-top: 1px solid #010101;
+}
+.light .tech-item:first-child,
+.light .tech-item:nth-child(5){
+    border-left: 1px solid #010101;  
+}
+.light .tech-item{
+    border-bottom: 1px solid #010101;
+    border-right: 1px solid #010101;
+}
+.light form input{
+    background-color: #e4e4e4;
+}
+.light form input:focus{
+    color: #010101;
 } 
 .wrapper{
     max-width: 1140px;
@@ -249,7 +327,7 @@ header{
     height: 140px;
     position: absolute;
     left: -70px;
-    top: calc(50% - 70px);
+    top: calc(50% - 67px);
 }
 .circle-price{
     width: 90px;
@@ -326,8 +404,11 @@ header{
     position: relative;
     z-index: 1;
 }
-.gradient{
+.dark .gradient{
     background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
+}
+.light .gradient{
+    background: linear-gradient(180deg, #E7E6E6 0%, rgba(231, 230, 230, 0) 100%);
 }
 .section-portfolio{
     position: relative;
@@ -355,14 +436,8 @@ header{
     margin-right: 77px;
 }
 .nav-tabs-link{
-    border-bottom: 2px solid transparent;
-    padding-bottom: 21px;
-    color: rgba(243, 242, 240, 0.5);
+    padding-bottom: 23px;
     text-decoration: none;
-}
-.nav-tabs-item.ui-state-active .nav-tabs-link{
-    color: #F3F2F0;
-    border-bottom: 1px solid #F3F2F0;
 }
 .nav-tabs-link:focus{
     outline: none;
@@ -371,7 +446,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #F3F2F0;
     padding-top: 61px;
     padding-bottom: 58px;
 }
@@ -430,7 +504,6 @@ header{
     display: grid;
     grid-template: repeat(2,1fr)/repeat(3,1fr);
     grid-gap: 79px 22px;
-    border-top: 1px solid #F3F2F0;
     padding-top: 80px;
     margin-top: 78px;
     padding-bottom: 100px;
@@ -446,8 +519,11 @@ header{
     width: 40px;
     height: 40px;
 }
-.advantages-image path{
+.dark .advantages-image path{
     fill: #F3F2F0;
+}
+.light .advantages-image path{
+    fill: #010101;
 }
 .advantages .title-h3{
     margin-top: 0;
@@ -467,30 +543,21 @@ header{
     margin-top: 83px;
 }
 .tech-item{
-    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
-    border-right: 1px solid rgba(243, 242, 240, 0.3);
     justify-content: center;
     align-items: center;
     display: flex;
     
 }
-.tech-item:first-child,
-.tech-item:nth-child(5){
-    border-left: 1px solid rgba(243, 242, 240, 0.3);  
-}
-.html, .css, .js, .jquery{
-    border-top: 1px solid rgba(243, 242, 240, 0.3);
-}
 .tech-image{
     filter: grayscale(100%);
     transition: 0.2s ease;
 }
-.tech-item:hover .tech-image{
-    filter: grayscale(0);
+.jquery .tech-image{
+    width: 72px;
 }
-.tech-item.php:hover .tech-image{
+/*.tech-item:hover .tech-image{
     filter: grayscale(0);
-}
+}*/
 .ui-tooltip{
     background-color: #E31B1B!important;
     border-color: #E31B1B!important;
@@ -521,7 +588,6 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 .tarif-item{
-    border-bottom: 1px solid #F3F2F0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -536,7 +602,6 @@ header{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-weight: 700;
-    border-bottom: 1px solid #F3F2F0;
 }
 .tarif-title > div{
     position: relative;
@@ -560,7 +625,6 @@ header{
     line-height: 150%;
     opacity: 0.8;
     padding-left: 10px;
-    border-bottom: 1px solid #F3F2F0;
     padding-bottom: 51px;
 }
 .tarif-name{
@@ -645,7 +709,6 @@ padding-bottom: 130px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-weight: 700;
-    border-bottom: 1px solid #F3F2F0;
     line-height: 150%;
     z-index: 4;
 }
@@ -655,12 +718,12 @@ padding-bottom: 130px;
     line-height: 150%;
     opacity: 0.8;
     padding-left: 10px;
-    border-bottom: 1px solid #F3F2F0;
     padding-bottom: 30px;
 }
 form{
     font-size: 12px;
     line-height: 150%;
+    
 }
 form label{
     opacity: 0.8;
@@ -670,15 +733,13 @@ form label{
 form input{
     width: 100%;
     padding: 29px 20px 23px;
-    background-color: #38383a;
     border: none;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 form input:focus{
     outline: none;
-    color: #F3F2F0;
-}
+}    
 form input[type=submit]{
     background-color: #D40000;
     color: #F3F2F0;
@@ -687,12 +748,17 @@ form input[type=submit]{
     line-height: 150%;
     padding: 20px;
     margin-bottom: 0;
+    transition: 0.2s ease;
+}
+form input[type=submit]:hover{
+    background-color: #EA0E00;
+    cursor: pointer;
 }
 .ui-selectmenu-button.ui-button{
-    text-align: left;
-    width: 100%;
     background-color: #38383a;
     color: #fff;
+    text-align: left;
+    width: 100%;
     padding: 24px 20px 25px;
     box-sizing: border-box;
     margin-bottom: 40px;
@@ -704,20 +770,19 @@ form input[type=submit]{
     outline: none;
 }
 .ui-selectmenu-menu .ui-menu{
-    background-color: #38383a;
     border-radius: 0;
-    color: rgba(243, 242, 240, 0.4);
     font-size: 12px;
+    background-color: #38383a;
+    color: rgba(243, 242, 240, 0.4);
 }
 .ui-selectmenu-menu .ui-menu-item{
     padding: 10px 20px;
 }
 .ui-selectmenu-menu .ui-menu-item:hover{
-    color: rgba(243, 242, 240, 1);
     padding: 10px 20px;
 }
 .form-item{
-    padding-top: 60px;
+    padding-top: 61px;
     padding-left: 10px;
 }
 .form-social{
@@ -725,9 +790,7 @@ form input[type=submit]{
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 0;
-}
-footer{
-    border-top: 1px solid #F3F2F0;
+    z-index: 4;
 }
 .footer-top{
     display: flex;
@@ -740,20 +803,35 @@ footer{
     padding-top: 30px;
     padding-bottom: 47px;
 }
-.footer-bottom p{
+.dark .footer-bottom p{
     margin-bottom: 0;
     color: rgba(243, 242, 240, 0.3);
     font-size: 12px;
 }
-.footer-link{
+.dark .footer-link{
     color: rgba(243, 242, 240, 0.3);
     border-bottom: 1px solid rgba(243, 242, 240, 0.3);
     transition: 0.2s ease;
     text-decoration: none;
 }
-.footer-link:hover{
+.dark .footer-link:hover{
     color: rgba(243, 242, 240, 1);
     border-bottom: 1px solid rgba(243, 242, 240, 1);
+}
+.light .footer-bottom p{
+    margin-bottom: 0;
+    color: rgba(1, 1, 1, 0.3);
+    font-size: 12px;
+}
+.light .footer-link{
+    color: rgba(1, 1, 1, 0.3);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+.light .footer-link:hover{
+    color: rgba(1, 1, 1, 1);
+    border-bottom: 1px solid rgba(1, 1, 1, 1);
 }
 .form-social .nav-social{
     margin-bottom: 2px;
