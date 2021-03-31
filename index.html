@@ -464,11 +464,70 @@
                 </div>
             </div>
         </section>  
-</div><!--div class="dark"-->
-      </div>
+        <section class="section-form">
+            <div class="main">
+                <svg class="circle circle-form" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="126.5" cy="126.5" r="126.5"/>
+                </svg>
+                <svg class="triangle" width="66" height="72" viewBox="0 0 66 72" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33 0L65.909 71.25H0.0910339L33 0Z"/>
+                </svg>
+            </div>    
+            <div class="form">
+                <div class="form-title">
+                    <p>
+                        Расскажите<br>о своем проекте
+                    </p>
+                </div>
+                <div class="form-description">
+                    <p>
+                        Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь с&nbsp;вами&nbsp;в ближайшее время
+                    </p>
+                </div>
+                <div class="form-item form-social">
+                    <ul class="nav nav-social">
+                        <li class= "nav-item"><a class="nav-link" href="https://vk.com/mystery_shake" target="_blank">VK</a></li>
+                        <li class= "nav-item"><a class="nav-link" href="https://www.instagram.com/mystery_shake/" target="_blank">Instagram</a></li>
+                        <li class= "nav-item"><a class="nav-link" href="https://ramenskoye.hh.ru/applicant/resumes/view?resume=cc1f17feff08a747680039ed1f6a4b76667946" target="_blank">hh</a></li>
+                    </ul>    
+                </div>
+                <div class="form-item">
+                    <form>
+                        <label>Телефон или почта</label>
+                        <input type="text" placeholder="Введите телефон">
+                        <label for="communicate">Выберите удобный способ связи</label>
+                        <select name="communicate" id="communicate">
+                            <option>Telegram</option>
+                            <option>WhatsApp</option>
+                            <option>Звонок на телефон</option>
+                            <option>SMS сообщение</option>
+                        </select>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
     <footer>
-
-    </footer>    
+        <div class="footer-top">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
+            </ul>
+            <ul class="nav nav-info">
+                <li class= "nav-item"><a class="nav-link" href="tel:+79163588121">8 916 358-81-21</a></li>
+                <li class= "nav-item"><a class="nav-link" href="mailto:ermak02.02@mail.ru">ermak02.02@mail.ru</a></li>
+            </ul>   
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2020, Все права защищены</p>
+            <p>Сделано в рамках курса учебной платформы <a class="footer-link" href="">Frontend Blok</a></p>
+        </div>
+    </footer>
+    </div>
+</div><!--div class="dark"-->    
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="Script/jquery-ui.min.js"></script>
@@ -476,6 +535,7 @@
         $( function() {
         $("#tabs").tabs({ active: 0});
         $( document ).tooltip();
+        $( "#communicate" ).selectmenu();
         } );
         $( ".tech-image" ).tooltip({
 
