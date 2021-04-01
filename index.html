@@ -30,6 +30,10 @@
                     <li class= "nav-item"><a class="nav-link" href="mailto:ermak02.02@mail.ru">ermak02.02@mail.ru</a></li>
                 </ul> 
         </header>
+        <div class="header-mobile">
+            <a class="nav-link" href="tel:+79163588121">8 916 358-81-21</a>
+            <button id="opener" class="menu"><img src="img/icons/menu.svg" alt="menu"></button>
+        </div>
         <img class="photo" src="img/photo.png" alt="Photo">
         <main> 
                 <div class="main">
@@ -522,13 +526,16 @@
             </ul>   
         </div>
         <div class="footer-bottom">
-            <p>&copy;2020, Все права защищены</p>
+            <p>&copy;2021, Все права защищены</p>
             <p>Сделано в рамках курса учебной платформы <a class="footer-link" href="">Frontend Blok</a></p>
         </div>
     </footer>
     </div>
 </div><!--div class="dark"-->    
     </div>
+    <div id="dialog" title="Basic dialog">
+        <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+      </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="Script/jquery-ui.min.js"></script>
     <script>
@@ -536,6 +543,21 @@
         $("#tabs").tabs({ active: 0});
         $( document ).tooltip();
         $( "#communicate" ).selectmenu();
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "blind",
+                duration: 1000
+            }
+            });
+        
+            $( "#opener" ).on( "click", function() {
+            $( "#dialog" ).dialog( "open" );
+            });
         } );
         $( ".tech-image" ).tooltip({
 
